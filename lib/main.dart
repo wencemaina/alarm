@@ -29,13 +29,14 @@ class MyAlarm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Alarm App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
       routes: {
-        '/home': (context) => SplashScreen(),
+        '/home': (context) => const SplashScreen(),
       },
     );
   }
