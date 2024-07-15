@@ -1,13 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SetAlarmScreen extends StatefulWidget {
-  const SetAlarmScreen({super.key});
+class AlarmSettingsScreen extends StatefulWidget {
+  const AlarmSettingsScreen({super.key});
 
   @override
-  State<SetAlarmScreen> createState() => _SetAlarmScreenState();
+  State<AlarmSettingsScreen> createState() => _AlarmSettingsScreenState();
 }
 
-class _SetAlarmScreenState extends State<SetAlarmScreen> {
+class _AlarmSettingsScreenState extends State<AlarmSettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +16,7 @@ class _SetAlarmScreenState extends State<SetAlarmScreen> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
-          "Add Alarm",
+          "Settings",
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
